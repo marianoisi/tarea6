@@ -2,18 +2,18 @@
 <html>
 <head>
 	<title>Title</title>
-	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link id="fp1" rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 	<!-- This following line is needed only in case of using other easing effect rather than "linear", "swing" or "easeInQuart". You can also add the full jQuery UI instead of this file if you prefer -->
-	<script src="js/vendors/jquery.easings.min.js"></script>
+	<script id="fp2" src="js/vendors/jquery.easings.min.js"></script>
 
 
 	<!-- This following line needed in the case of using the plugin option `scrollOverflow:true` -->
-	<script type="text/javascript" src="js/vendors/jquery.slimscroll.min.js"></script>
+	<script id="fp3" type="text/javascript" src="js/vendors/jquery.slimscroll.min.js"></script>
 
-	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script id="fp4" type="text/javascript" src="js/jquery.fullPage.js"></script>
 	<script type="text/javascript" src="js/slide.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -61,8 +61,43 @@
    			</div>	
    			
    		</div>
-    	<div class="slide slide3">Welcome</div>
-    	<div class="slide slide4">Welcome</div>
+    	<div class="slide fp-slide fp-table slide3">
+        <h2>Contact</h2>
+        <div class="row">
+          
+          <iframe width="465" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.no/maps?f=q&amp;source=s_q&amp;hl=no&amp;geocode=&amp;q=Hafstadvegen+35,+F%C3%B8rde&amp;aq=0&amp;oq=hafstadvegen+35&amp;sll=61.143235,9.09668&amp;sspn=17.454113,57.084961&amp;ie=UTF8&amp;hq=&amp;hnear=Hafstadvegen+35,+6800+F%C3%B8rde,+Sogn+og+Fjordane&amp;t=m&amp;z=14&amp;iwloc=A&amp;ll=61.450253,5.859145&amp;output=embed"></iframe>
+          <form>
+            <label for="field1">Name</label>
+            <input name="name" id="field1" type="text">
+            <label for="field5">Email</label>
+            <input name="email" id="field5" type="email">
+            <label for="field4">Message</label>
+            <textarea rows="5" cols="20" name="message" id="field4"></textarea>
+            <input value="Submit" type="submit">
+          </form>
+        </div>
+        
+      </div>
+    	<div class="slide slide4">
+        <h2>News</h2>
+        <div class="row">
+          <img class="calendar" src="img/calendar.png"/>
+          
+          <div class="events">
+            <h3>TODAY</h3>
+            <p>Live Music at Wildflower</p>
+            <h3>DEC 13 - 14</h3>
+            <p>Passholder Appreciation Days</p>
+            <h3>DEC 18</h3>
+            <p>Adventure Speaker Series</p>
+            <h3>DEC 19</h3>
+            <p>Live Music at Wildflower</p>
+            <h3>DEC 19</h3>
+            <p>Transceiver Skills Clinic</p>
+            <h3>DEC 20</h3>
+            <p>Highly Decorated</p>
+          </div>
+      </div>
 	</div>
 </body>
 </html>

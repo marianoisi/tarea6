@@ -51,4 +51,12 @@ $(document).ready(function() {
         onSlideLeave: function(anchorLink, index, slideIndex, direction){}
     });
     
+    $( window ).resize(function() {
+      if($(window).width()<900){
+        $( "#fp1").remove();
+        $( "#fp2").remove();
+        $( "#fp3").remove();
+        $( "#fp4").remove();
+      }
+    });
 });
